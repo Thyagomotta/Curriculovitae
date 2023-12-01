@@ -1,0 +1,238 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+/* Começo do style da parte esquerda. */
+
+.container .left-Side{
+    position: relative;
+    background: #000000;
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #fff;font-size: 1.5em;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+
+.profileText span{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+   position: relative; 
+}
+
+.contactInfo ul li{ 
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{ 
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span{ 
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education li{
+    margin-bottom:15px;
+}
+
+.contactInfo.education h5{
+    color: #00fffb;
+    text-align:left;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2){
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contactInfo.education h4{
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contactInfo.linguagem .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.linguagem .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+/* Fim do style da parte esquerda. */
+
+/* Começo do style da parte direita. */
+
+.container .right-Side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom:50px;
+    font-size: 18px;
+}
+.about1{
+    margin-bottom:50px;
+    font-size: 20px;
+}
+.about2{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.about3{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #004466;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+p{
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+img {
+    float: right;
+    /* Posiciona a imagem à esquerda */
+    margin-right: 0%;
+    /* Adapte a margem conforme necessário */
+    width: 33%;
+    border-radius:0%;
+    object-fit: cover;
+}
+
+.text {
+    overflow: hidden;
+    /* Limpa o float */
+}
+
+h3,
+p {
+    margin: 0px;
+    /* Remove as margens padrão */
+}
+.text p span{
+    text-transform: uppercase;
+    /* color: #03a9f4; */
+    font-weight: 500;
+    font-size: 13px;
+}
+.about .li{
+    font-size: 155px;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #003147;
+    font-size: 16px;
+}
+
+.about .box .text span{
+    text-transform: uppercase;
+    color: #03a9f4;
+    /* font-size: 16px; */
+}
